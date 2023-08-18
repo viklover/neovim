@@ -21,5 +21,6 @@ require("lazy").setup({
     { 'nvim-treesitter/nvim-treesitter' },
     { 'neovim/nvim-lspconfig' },
     { 'williamboman/mason.nvim' },
-    { 'williamboman/mason-lspconfig.nvim' }
+    { 'williamboman/mason-lspconfig.nvim' },
+    { 'navarasu/onedark.nvim' }
 })
