@@ -9,4 +9,18 @@ vim.fn.sign_define("DiagnosticSignInfo",
 vim.fn.sign_define("DiagnosticSignHint",
                    {text = "", texthl = "DiagnosticSignHint"})
 
-require("neo-tree").setup({})
+require("neo-tree").setup({
+  filesystem = {
+    filtered_items = {
+      visible = false,
+      hide_dotfiles = false,
+      hide_gitignored = false,
+      hide_hidden = true, -- only works on Windows for hidden files/directories,
+      hide_by_name = {
+        "node_modules",
+	".git"
+      }
+    }
+  },
+  use_libuv_file_watcher = true
+})
