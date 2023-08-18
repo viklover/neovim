@@ -17,5 +17,9 @@ require("lazy").setup({
             "nvim-lua/plenary.nvim", "nvim-tree/nvim-web-devicons",
             "MunifTanjim/nui.nvim", "s1n7ax/nvim-window-picker"
         }
-    }
+    },
+    { 'nvim-treesitter/nvim-treesitter' },
+    { 'neovim/nvim-lspconfig' },
+    { 'williamboman/mason.nvim' },
+    { 'williamboman/mason-lspconfig.nvim' }
 })
